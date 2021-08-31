@@ -78,10 +78,10 @@ jobs:
     #Set the type of machine to run on
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
-    needs: 
-      - lint
-      - spellCheck
-      - linkcheck
+    # needs: 
+    #   - lint
+    #   - spellCheck
+    #   - linkcheck
     env: 
         MARP_VERSION: 0.21.1
     steps:
