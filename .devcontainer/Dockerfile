@@ -17,8 +17,7 @@ ENV PATH=$PATH:/usr/local/bin
 
 COPY requirements.txt /requirements.txt
 # RUN pwd && ls -al && env
-RUN chmod +x /usr/local/bin/entrypoint.sh && \
-    apt-get update -y && \
+RUN apt-get update -y && \
     apt-get install -y git \
         build-essential \
         python3-cffi \
