@@ -31,7 +31,7 @@
 		"dockerfile": "Dockerfile",
 		"args": {}
 	},
-    "appPort": "0.0.0.0",
+    // "appPort": "0.0.0.0",
     "containerEnv": {},
 	"remoteUser": "vscode"
 }
