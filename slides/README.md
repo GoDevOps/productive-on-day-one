@@ -85,6 +85,7 @@ Today, it's a very different situation
 
 https://marketplace.visualstudio.com/items?itemName=okteto.remote-kubernetes
 
+Okteto sounds amazing, let's give it a shot
 <!--
 
 Speaker notes
