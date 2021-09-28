@@ -43,6 +43,7 @@ Hello I am Laurent, I also work for DXC Technology where I am acting internally 
 -->
 
 ---
+
 <!--backgroundImage: url('https://github.com/GoDevOps/productive-on-day-one/raw/main/slides/simple.jpg')-->
 
 The quest for productivity
@@ -69,11 +70,20 @@ Today, it's a very different situation
 
 ---
 
-# Title
+# Notes
 
-- bullets
-- bullets
-- bullets
+- Operations
+  - Authentication
+  - Authorization
+  
+- Developers
+  - GitHub DevContainer
+    - Container is hosted on GitHub CodeSpaces
+  - VSCode DevContainer
+    - Container is hosted in local Docker
+- DevContainer in kubernetes : https://okteto.com/blog/vs-code-remote-development-in-kubernetes/
+
+https://marketplace.visualstudio.com/items?itemName=okteto.remote-kubernetes
 
 <!--
 
