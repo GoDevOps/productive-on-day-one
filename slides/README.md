@@ -93,4 +93,41 @@ Speaker notes
 -->
 
 ---
+
+# DevContainers
+
+- DevEnv as code
+  - devcontainer.json
+  - Dockerfile
+- All in one development environment
+  - Tools set
+  - Dependencies management
+- Easily shareable
+   
+---
+
+# DevContainer in docker
+
+- Requires VSCode and the Remote-Development extension
+- Works with local Docker CE/EE (ex: Docker Desktop for Windows)
+- Works with remote Docker host through SSH or TCP
+
+---
+
+# GitHub code space
+
+- Based on devcontainer
+- Works online in web browser
+- Works with a local docker host
+  - Requires VSCode and the Remote-Development extension
+
+---
+
+# DevContainer in Kubernetes
+
+- VSCode Remote-Kubernetes
+- VSCode Remote-SSH
+
+
+---
 # Thank you 🙏
