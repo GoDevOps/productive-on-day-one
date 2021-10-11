@@ -26,6 +26,47 @@ footer: '[github/ojacques](https://github.com/ojacques) &nbsp; &nbsp; &nbsp; &nb
 ## on day 1
 ### ...and ever after
 
+<!--
+Agenda / Slides
+
+- Intro: why dev productivity is important? What if you don't do anything about it?
+- What gets in the way of developer productivity?
+  - Machine / PC / MAC * 
+  - Access to company portal
+  - Access to productivity tools (DaaS/VDI, GIT host, ...) *
+  - Access to privileged accounts (cloud, ...)
+
+- (Breaking use cases into multiple types of config)
+
+- Configuring your "machine"
+  - Case A: Old style - word doc to configure. Discrepancies between developers
+  - Case B: Local VMs (Vagrant):
+    - good: start to have common components. 
+    - not so good: But not project specific. Missing config (need Ansible, Chocolatey or other). Need lots of RAM/CPU
+  - Case C: VMs in the cloud:
+    - good: as much capacity as needed. Low requirements on local machine.
+    - not so good: shared images managed by IT, not admin
+  - Case D: Docker. DevContainers, local, remote (codespaces), oktekto / GitPod
+    - good: 
+      - Dev env can also be used for CI/CD
+    - Docs: 
+      - https://code.visualstudio.com/docs/containers/choosing-dev-environment#_remote-machine
+      - https://github.com/hypescaler/aws-vscode-remote-containers#managed-vs-code-remote-dev-environments
+  - Case D+: language specific isolations (Python VirtualEnv, other)
+  - Case E: Dare to mix everything.
+    - Docker aliases
+- GitLab/GitPod GitHub/CodeSpaces
+- Additional use cases:
+  - Accessing secrets (trusted roles / Azure Service Principals)
+  - Authorization: via Directory groups / LDAP
+
+
+- DEMO - 15 min
+  - Laurent: I'm on my local VM, I debug locally (devcontainer)
+  - Olivier: I have nothing installed, but VSCode, I debug remotely 
+  Small Python Hello World (with a loop)
+-->
+
 <!-- 
 speaker: Olivier
 
@@ -91,6 +132,21 @@ Okteto sounds amazing, let's give it a shot
 Speaker notes
 
 -->
+
+<!--
+Making dev and ops productive on day 1 and ever after
+
+In your software powered company, nothing is more important than developer and operations productivity. Ideally, one should be able make change in production - through the safety of a CI and CD pipeline - on day 1 on the job. This talk shares multiple recipes that we have put in place to get to this "productive on day 1" ideal, including on very restrictive and regulated environments. The PC/MAC itself, the Integrated Developer Environment (IDE), running the service or application locally, as well as everything needed to manage infrastructure. We go through different solutions for 3 typical profiles: a front-end developer, a data scientist and an infrastructure as code developer.
+
+
+
+-->
+
+---
+
+# DaaS
+
+Desktop as a Service 
 
 ---
 
