@@ -4,7 +4,7 @@ theme: default
 style: |
   footer {
     position: absolute;
-    #left: 50%;
+    left: 70%;
     bottom: 7px;
   }
   section header a { color: white;}
@@ -16,15 +16,13 @@ style: |
 paginate: false
 footer: '[github/ojacques](https://github.com/ojacques) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [github/angegar](https://github.com/angegar)'
 ---
-<!--backgroundImage: url('https://github.com/GoDevOps/productive-on-day-one/raw/main/slides/title.jpg')-->
-<br/>
-<br/>
-<br/>
-<br/>
 
-## Making Dev & Ops Productive
-## on day 1
-### ...and ever after
+<!--
+Making dev and ops productive on day 1 and ever after
+
+In your software powered company, nothing is more important than developer and operations productivity. Ideally, one should be able make change in production - through the safety of a CI and CD pipeline - on day 1 on the job. This talk shares multiple recipes that we have put in place to get to this "productive on day 1" ideal, including on very restrictive and regulated environments. The PC/MAC itself, the Integrated Developer Environment (IDE), running the service or application locally, as well as everything needed to manage infrastructure. We go through different solutions for 3 typical profiles: a front-end developer, a data scientist and an infrastructure as code developer.
+
+-->
 
 <!--
 Agenda / Slides
@@ -82,6 +80,16 @@ Speakers: Olivier & Laurent
 Laurent:
 Hello I am Laurent, I also work for DXC Technology where I am acting internally as a DevOps Coach and externally as a CI and CD expert. I hope we will manage to show you the benefits of the CI and CD practices for documentation as code, as well as how easy it is to do it.
 -->
+<!--backgroundImage: url('https://github.com/GoDevOps/productive-on-day-one/raw/main/slides/title.jpg')-->
+<!-- _color:white -->
+<br/>
+<br/>
+<br/>
+<br/>
+
+# Making Dev & Ops Productive
+# on day 1
+## ...and ever after
 
 ---
 
@@ -89,7 +97,9 @@ Hello I am Laurent, I also work for DXC Technology where I am acting internally 
 
 The quest for productivity
 
-# 🏰🦄🤴👸🐴👻⚔🗡🏴‍☠️
+# 👩‍💻👨‍💻🏰🦄🤴👸🐴👻⚔🗡🏴‍☠️
+
+And why we care
 
 <!-- 
 
@@ -97,7 +107,7 @@ Back to this presentation.
 
 This presentation is an experience report, because we have learned so much from others through this format.
 
-This presentation is about our quest: the quest for productivity.
+This presentation is about our quest: the quest for developer productivity.
 
 Previously, 
 - It would take weeks, sometimes months for a new Dev or Ops to be productive
@@ -111,36 +121,41 @@ Today, it's a very different situation
 
 ---
 
-# Notes
+# Facts
 
-- Operations
-  - Authentication
-  - Authorization
-  
-- Developers
-  - GitHub DevContainer
-    - Container is hosted on GitHub CodeSpaces
-  - VSCode DevContainer
-    - Container is hosted in local Docker
-- DevContainer in kubernetes : https://okteto.com/blog/vs-code-remote-development-in-kubernetes/
+1. You are a software powered company
+2) You need to optimize end-to-end
 
-https://marketplace.visualstudio.com/items?itemName=okteto.remote-kubernetes
+---
+# Developer productivity matters
 
-Okteto sounds amazing, let's give it a shot
-<!--
+It is even a job title: DevEx
 
-Speaker notes
+Also known as "Enablement team".
 
--->
+Also known as Internal tooling / developer productivity engineers / toolsmiths
 
-<!--
-Making dev and ops productive on day 1 and ever after
+---
 
-In your software powered company, nothing is more important than developer and operations productivity. Ideally, one should be able make change in production - through the safety of a CI and CD pipeline - on day 1 on the job. This talk shares multiple recipes that we have put in place to get to this "productive on day 1" ideal, including on very restrictive and regulated environments. The PC/MAC itself, the Integrated Developer Environment (IDE), running the service or application locally, as well as everything needed to manage infrastructure. We go through different solutions for 3 typical profiles: a front-end developer, a data scientist and an infrastructure as code developer.
+# 3 areas
 
+1. Bootstraping a development, debug and test environment
+1. Deployment and tests with CI & CD
+1. Analytics
 
+---
 
--->
+# Measuring
+
+From nothing to improving:
+
+1. Time to code commit
+2) Time to test and deploy
+3) Time to get feedback
+
+---
+
+# Improving Time to commit
 
 ---
 
@@ -183,6 +198,43 @@ Desktop as a Service
 
 - VSCode Remote-Kubernetes
 - VSCode Remote-SSH
+
+
+
+---
+
+# Improving time to test and deploy
+
+CI and CD!
+
+---
+
+# Improving time to get feedback
+
+---
+
+
+---
+
+<!--
+# Notes
+
+- Operations
+  - Authentication
+  - Authorization
+  
+- Developers
+  - GitHub DevContainer
+    - Container is hosted on GitHub CodeSpaces
+  - VSCode DevContainer
+    - Container is hosted in local Docker
+- DevContainer in kubernetes : https://okteto.com/blog/vs-code-remote-development-in-kubernetes/
+
+https://marketplace.visualstudio.com/items?itemName=okteto.remote-kubernetes
+
+Okteto sounds amazing, let's give it a shot
+
+-->
 
 
 ---
