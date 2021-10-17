@@ -1,6 +1,6 @@
 image: 
  file: .devcontainer/Dockerfile
- context: .
+ context: ./devcontainer
 
 # tasks:
 #   - name: Install prerequisites
