@@ -1,4 +1,4 @@
-image: angegar/devcontainer
+image: angegar/devcontainers
 
 tasks:
   - name: Install python requirements
