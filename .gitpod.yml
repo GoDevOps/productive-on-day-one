@@ -1,5 +1,5 @@
 image: angegar/devcontainer
-  
+
 tasks:
   - name: Install python requirements
     init: pip install -r requirements.txt
@@ -7,8 +7,9 @@ tasks:
   - name: Install marp
     init: wget https://github.com/marp-team/marp-cli/releases/download/v${MARP_VERSION}/marp-cli-v${MARP_VERSION}-linux.tar.gz -O marp.tar.gz &&	tar xvf marp.tar.gz -C /usr/local/bin
 vscode:
-  - marp-team.marp-vscode
-  - hediet.vscode-drawio
-  - jebbs.plantuml
-  - yzhang.markdown-all-in-one
-  - streetsidesoftware.code-spell-checker
+  extensions:
+    - marp-team.marp-vscode
+    - hediet.vscode-drawio
+    - jebbs.plantuml
+    - yzhang.markdown-all-in-one
+    - streetsidesoftware.code-spell-checker
