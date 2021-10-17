@@ -1,16 +1,18 @@
-image: angegar/devcontainers
+image: 
+ file: .devcontainer/Dockerfile
+ context: .
 
-tasks:
-  - name: Install prerequisites
-    init: > 
-      apt-get update -y
-      apt-get install -y git build-essential python3-cffi libcairo2 libpango-1.0-0 libpangocairo-1.0-0 libgdk-pixbuf2.0-0 libffi-dev shared-mime-info wget
+# tasks:
+#   - name: Install prerequisites
+#     init: > 
+#       apt-get update -y
+#       apt-get install -y git build-essential python3-cffi libcairo2 libpango-1.0-0 libpangocairo-1.0-0 libgdk-pixbuf2.0-0 libffi-dev shared-mime-info wget
 
-  - name: Install python requirements
-    init: pip install -r requirements.txt
+#   - name: Install python requirements
+#     init: pip install -r requirements.txt
     
-  - name: Install marp
-    init: wget https://github.com/marp-team/marp-cli/releases/download/v${MARP_VERSION}/marp-cli-v${MARP_VERSION}-linux.tar.gz -O marp.tar.gz &&	tar xvf marp.tar.gz -C /usr/local/bin
+#   - name: Install marp
+#     init: wget https://github.com/marp-team/marp-cli/releases/download/v${MARP_VERSION}/marp-cli-v${MARP_VERSION}-linux.tar.gz -O marp.tar.gz &&	tar xvf marp.tar.gz -C /usr/local/bin
 vscode:
   extensions:
     - marp-team.marp-vscode
