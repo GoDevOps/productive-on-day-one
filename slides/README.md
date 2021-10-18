@@ -138,7 +138,7 @@ Also known as Internal tooling / developer productivity engineers / toolsmiths
 
 # 3 areas
 
-1. Bootstraping a development and debug environment
+1. Bootstrapping a development and debug environment
 1. Deployment and tests with CI & CD
 1. Analytics
 
@@ -183,7 +183,7 @@ From nothing to improving:
 # DaaS (Desktop as a Service)
 
 - One centrally managed VM by developer
-- Pre-configured operating system
+- Preconfigured operating system
 - Each project has different needs
   - Different OS flavors
   - Different VM flavors (ex: GPU)
@@ -193,7 +193,7 @@ From nothing to improving:
 
 ---
 
-# Docker based solution - devcontainers
+# Docker based solution - DevContainers
 
 - Integrated with VS Code
 - Configure dependencies
@@ -207,7 +207,7 @@ From nothing to improving:
 
 # Docker based solution - GitHub code space
 
-- Based on devcontainer (thus same features)
+- Based on `devcontainer` (thus same features)
 - IDE hosted online, accessible from a web browser
 - May work with a local VSCode instance
 - Self-hosted solution
@@ -218,7 +218,6 @@ From nothing to improving:
 
 - GitPod
 - Otekto
-- A FINIR !!!!!!!!!!!!!!!!
 
 ---
 
