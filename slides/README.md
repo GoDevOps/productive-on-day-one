@@ -139,66 +139,86 @@ Also known as Internal tooling / developer productivity engineers / toolsmiths
 
 # 3 areas
 
-1. Bootstraping a development, debug and test environment
+1. Bootstraping a development and debug environment
 1. Deployment and tests with CI & CD
 1. Analytics
 
+<!-- Productive as 1 dev, productive as a team, productive for operations 
+Let's focus on the first point
+-->
 ---
 
-# Measuring
+# 3 measures
 
 From nothing to improving:
 
-1. Time to code commit
+1. Time to 1st code commit
 2) Time to test and deploy
 3) Time to get feedback
 
 ---
 
-# Improving Time to commit
+# Improving Time to 1st commit
 
 ---
 
-# DaaS
+# DevEnv as Code
 
-Desktop as a Service 
-
----
-
-# DevContainers
-
-- DevEnv as code
-  - devcontainer.json
-  - Dockerfile
-- All in one development environment
-  - Tools set
-  - Dependencies management
-- Easily shareable
-   
----
-
-# DevContainer in docker
-
-- Requires VSCode and the Remote-Development extension
-- Works with local Docker CE/EE (ex: Docker Desktop for Windows)
-- Works with remote Docker host through SSH or TCP
+**"It works on my computer !!!"**
+- Provide easy to start development environment
+- Control dependencies
+- Code review on development environment changes
+- Secure credentials
 
 ---
 
-# GitHub code space
+# DevEnv as Code - Solutions
 
-- Based on devcontainer
-- Works online in web browser
-- Works with a local docker host
-  - Requires VSCode and the Remote-Development extension
+- based on virtual machines
+- based on docker containers
+- based on Kubernetes
+
+---
+
+# DaaS (Desktop as a Service)
+
+- One centrally managed VM by developer 
+- Pre-configured operating system
+- Each project has different needs
+  - Different OS flavors
+  - Different VM flavors (ex: GPU)
+  - One big setup containing all the flavors
+- Manage VM Start / Stop
+- **Different developers may have different setup**
+
+---
+
+# Docker based solution - devcontainers
+
+- Integrated with VS Code
+- Configure dependencies
+- Configure VSCode extensions
+- Configure resource usage
+- Required local docker host
+  - May work with remote docker hosts (ex: Docker Desktop for Windows)
+- Required the Remote-Development extension
+
+---
+
+# Docker based solution - GitHub code space
+
+- Based on devcontainer (thus same features)
+- IDE hosted online, accessible from a web browser
+- May work with a local VSCode instance
+- Self-hosted solution
 
 ---
 
 # DevContainer in Kubernetes
 
-- VSCode Remote-Kubernetes
-- VSCode Remote-SSH
-
+- GitPod
+- Otekto
+- A FINIR !!!!!!!!!!!!!!!!
 
 
 ---
