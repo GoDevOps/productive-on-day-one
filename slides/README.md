@@ -128,9 +128,9 @@ Today, it's a very different situation
 ---
 # Developer productivity matters
 
-It is even a job title: DevEx
+It's even a job title: DevEx
 
-Also known as "Enablement team".
+Also known as "Enablement team."
 
 Also known as Internal tooling / developer productivity engineers / toolsmiths
 
@@ -165,7 +165,7 @@ From nothing to improving:
 
 ## "It works on my machine!"
 
-- Provide easy to start development environment
+- Offers easy to start development environment
 - Control dependencies
 - Code review on development environment changes
 - Secure credentials
