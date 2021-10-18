@@ -24,6 +24,7 @@
         "marp-team.marp-vscode",
         "hediet.vscode-drawio",
         "jebbs.plantuml",
+        "markdownlint",
         "yzhang.markdown-all-in-one",
         "streetsidesoftware.code-spell-checker"
 	],
