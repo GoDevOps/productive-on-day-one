@@ -58,7 +58,6 @@ Agenda / Slides
   - Accessing secrets (trusted roles / Azure Service Principals)
   - Authorization: via Directory groups / LDAP
 
-
 - DEMO - 15 min
   - Laurent: I'm on my local VM, I debug locally (devcontainer)
   - Olivier: I have nothing installed, but VSCode, I debug remotely 
@@ -144,8 +143,8 @@ Also known as Internal tooling / developer productivity engineers / toolsmiths
 1. Analytics
 
 <!-- Productive as 1 dev, productive as a team, productive for operations 
-Let's focus on the first point
--->
+Let's focus on the first point -->
+
 ---
 
 # 3 measures
@@ -164,7 +163,8 @@ From nothing to improving:
 
 # DevEnv as Code
 
-**"It works on my computer !!!"**
+## "It works on my machine!"
+
 - Provide easy to start development environment
 - Control dependencies
 - Code review on development environment changes
@@ -182,7 +182,7 @@ From nothing to improving:
 
 # DaaS (Desktop as a Service)
 
-- One centrally managed VM by developer 
+- One centrally managed VM by developer
 - Pre-configured operating system
 - Each project has different needs
   - Different OS flavors
@@ -220,7 +220,6 @@ From nothing to improving:
 - Otekto
 - A FINIR !!!!!!!!!!!!!!!!
 
-
 ---
 
 # Improving time to test and deploy
@@ -232,7 +231,6 @@ CI and CD!
 # Improving time to get feedback
 
 ---
-
 
 ---
 
@@ -255,7 +253,6 @@ https://marketplace.visualstudio.com/items?itemName=okteto.remote-kubernetes
 Okteto sounds amazing, let's give it a shot
 
 -->
-
 
 ---
 # Thank you 🙏
