@@ -143,8 +143,8 @@ Also known as Internal tooling / developer productivity engineers / toolsmiths
 1. Analytics
 
 <!-- Productive as 1 dev, productive as a team, productive for operations 
-Let's focus on the first point
--->
+Let's focus on the first point -->
+
 ---
 
 # 3 measures

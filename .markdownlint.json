@@ -1,6 +1,8 @@
   
 {
 "frontMatter": false,
+"default": true,
+"MD003": false,
 "MD004": false,
 "MD013": false,
 "MD022": false,
