@@ -142,11 +142,11 @@ Depending on the size of the company:
 
 # 3 topics, 3 metrics
 
-| Topic                                        | Metric                  |
-| -------------------------------------------- | ----------------------- |
-| 🧑‍💻Bootstrapping a development environment    | Time to 1st code commit |
-| 🏭CI & CD to test and deploy                 | Time to test and deploy |
-| 📊Observability                              | Time to get feedback    |
+| Topic                                    | Metric                  |
+| ---------------------------------------- | ----------------------- |
+| 🧑‍💻Bootstrapping a development environment | Time to 1st code commit |
+| 🏭CI & CD to test and deploy              | Time to test and deploy |
+| 📊Observability                           | Time to get feedback    |
 
 <!--
 
@@ -205,18 +205,25 @@ As developers or IT operation guy  your probably know the "It works on my machin
 - Control dependencies
 - Code review on development environment changes
 - Secure credentials
+- Improve segregation between projects which may be for different clients
 
 ---
 
 # DevEnv as Code - Solutions
 
+## Pet way
 - based on virtual machines
+
+## Cattle way
+
 - based on docker containers
 - based on Kubernetes
 
 ---
 
 # DaaS (Desktop as a Service)
+
+![bg right:20% fit](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLxk2UDRsPqrXoYscy9Yzj5yS0gDN4S8vBjuqA5lKWbxpyMYTHLAw_6_RDV5VKCJQQbE4&usqp=CAU)
 
 - One centrally managed VM by developer
 - Preconfigured operating system
@@ -236,7 +243,6 @@ As developers or IT operation guy  your probably know the "It works on my machin
 # Docker based solution - DevContainers
 
 ![bg right:20% fit](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9s0sXU7CrO01h2mMomrxFM0ZBkA6lGVGD9vnJRyI_9xOtY2Cg1bsVucD3M8lwNi428Dc&usqp=CAU)
-
 - Integrated with VS Code
 - Configure dependencies
 - Configure VSCode extensions
@@ -261,10 +267,14 @@ As developers or IT operation guy  your probably know the "It works on my machin
 
 ---
 
-# DevContainer in Kubernetes
+# DevContainer in Kubernetes - GitPods
 
-- GitPod
-- Otekto
+- It is a container orchestrator thus we retrieve the previous benefits
+- All the good benefits of Kubernetes in matter of :
+     - resource usage
+     - multi tenancy
+     - cost management
+- Full browser based development environment
 
 ---
 
