@@ -229,6 +229,10 @@ As developers or IT operation guy  your probably know the "It works on my machin
 
 ---
 
+![bg 80%](daas.drawio.png)
+
+---
+
 # Docker based solution - DevContainers
 
 ![bg right:20% fit](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9s0sXU7CrO01h2mMomrxFM0ZBkA6lGVGD9vnJRyI_9xOtY2Cg1bsVucD3M8lwNi428Dc&usqp=CAU)
@@ -240,6 +244,11 @@ As developers or IT operation guy  your probably know the "It works on my machin
 - Required local docker host
   - May work with remote docker hosts (ex: Docker Desktop for Windows)
 - Required the Remote-Development extension
+
+---
+# Local 🐳 container
+
+![Local Docker container architecture](local.container.drawio.png)
 
 ---
 
