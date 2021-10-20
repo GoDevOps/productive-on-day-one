@@ -267,7 +267,7 @@ As developers or IT operation guy  your probably know the "It works on my machin
 
 ---
 
-# DevContainer in Kubernetes - GitPods
+# DevContainer in Kubernetes
 
 - It is a container orchestrator thus we retrieve the previous benefits
 - All the good benefits of Kubernetes in matter of :
