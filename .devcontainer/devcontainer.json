@@ -1,38 +1,33 @@
-// For format details, see https://aka.ms/vscode-remote/devcontainer.json or the definition README at
-// https://github.com/microsoft/vscode-dev-containers/tree/master/containers/debian-9-git
-
-// Configuration reference : https://code.visualstudio.com/docs/remote/devcontainerjson-reference
 {
-    "name": "Marp",
-    "service": "container-doc",
-    // Use 'settings' to set *default* container specific settings.json values on container create.
-    // You can edit these settings after create using File > Preferences > Settings > Remote.
-    "settings": {
-        "terminal.integrated.shell.linux": "/bin/bash",
-        "markdown.marp.enableHtml": true,
-        "markdown.marp.themes": [
-            "slide/theme.css"
-        ],
-        "cSpell.language": ",en"
+  "name": "Marp",
+  "settings": {
+    "terminal.integrated.profiles.linux": {
+      "bash": {
+        "path": "bash",
+        "args": []
+      }
     },
-    "forwardPorts": [],
-    // Use 'appPort' to create a container with published ports. If the port isn't working, be sure
-    // your server accepts connections from all interfaces (0.0.0.0 or '*'), not just localhost.
-    // "appPort": [],
-    // Add the IDs of extensions you want installed when the container is created in the array below.
-    "extensions": [
-        "marp-team.marp-vscode",
-        "hediet.vscode-drawio",
-        "jebbs.plantuml",
-        "markdownlint",
-        "yzhang.markdown-all-in-one",
-        "streetsidesoftware.code-spell-checker"
-	],
-	"build": {
-		"dockerfile": "Dockerfile",
-		"args": {}
-	},
-    // "appPort": "0.0.0.0",
-    "containerEnv": {},
-	"remoteUser": "vscode"
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "markdown.marp.enableHtml": true,
+    "markdown.marp.themes": ["slide/theme.css"],
+    "cSpell.language": ",en"
+  },
+  // Ports exposed
+  "forwardPorts": [],
+  // VSCode extensions
+  "extensions": [
+    "marp-team.marp-vscode",
+    "hediet.vscode-drawio",
+    "jebbs.plantuml",
+    "DavidAnson.vscode-markdownlint",
+    "yzhang.markdown-all-in-one",
+    "streetsidesoftware.code-spell-checker"
+  ],
+  // Runtime container
+  "build": {
+    "dockerfile": "Dockerfile",
+    "args": {}
+  },
+  "containerEnv": {},
+  "remoteUser": "vscode"
 }
