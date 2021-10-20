@@ -77,8 +77,9 @@ Speakers: Olivier & Laurent
 (NOTE: embed Olivier & Laurent's faces / OBS)
 
 Laurent:
-Hello I am Laurent, I also work for DXC Technology where I am acting internally as a DevOps Coach and externally as a CI and CD expert. I hope we will manage to show you the benefits of the CI and CD practices for documentation as code, as well as how easy it is to do it.
+Hello I am Laurent, I work for DXC Technology where I am acting as DevOps Coach and CI and CD expert for our customers. I hope at the end of this talk you will fall for development environment as code.
 -->
+
 <!--backgroundImage: url('https://github.com/GoDevOps/productive-on-day-one/raw/main/slides/title.jpg')-->
 <!-- _color:white -->
 <br/>
@@ -196,7 +197,10 @@ Whether you are a new hire, or someone new to the team, it takes time to be read
 <!--
 As developers or IT operation guy  your probably know the "It works on my machine" syndrome. Development Environment As Code can help to avoid this kind of troubles as you will be able to have exactly the same environment during the development than in the CI/CD pipeline or in production.
 -->
+<<<<<<< HEAD
 
+=======
+>>>>>>> Add text
 ![bg right:30% fit](https://i.redd.it/gfn7yg3psuh71.gif)
 
 ## "It works on my machine!"
@@ -211,9 +215,16 @@ As developers or IT operation guy  your probably know the "It works on my machin
 
 # DevEnv as Code - Solutions
 
+<!--
+Development Environment as code is another step in the everything as code journey. Such as infrastructures moving from bare metal servers configured with script, to cloud infrastructure fully built and configured as code, the development environments are evoluting.
+
+with the emergence of new technologies such as containers, development environments can now move from being pets to be cattle.
+-->
+
 ![bg right:30% fit](overview.drawio.png)
 
 ## Pet way
+
 - based on virtual machines
 
 ## Cattle way
@@ -277,6 +288,16 @@ As developers or IT operation guy  your probably know the "It works on my machin
   - multi tenancy
   - cost management
 - Full browser based development environment
+
+---
+
+# Improving time to test and deploy
+
+CI and CD!
+
+---
+
+# Improving time to get feedback
 
 ---
 
