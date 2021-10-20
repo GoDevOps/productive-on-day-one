@@ -211,6 +211,8 @@ As developers or IT operation guy  your probably know the "It works on my machin
 
 # DevEnv as Code - Solutions
 
+![bg right:30% fit](overview.drawio.png)
+
 ## Pet way
 - based on virtual machines
 
