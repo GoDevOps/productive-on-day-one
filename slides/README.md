@@ -77,8 +77,9 @@ Speakers: Olivier & Laurent
 (NOTE: embed Olivier & Laurent's faces / OBS)
 
 Laurent:
-Hello I am Laurent, I also work for DXC Technology where I am acting internally as a DevOps Coach and externally as a CI and CD expert. I hope we will manage to show you the benefits of the CI and CD practices for documentation as code, as well as how easy it is to do it.
+Hello I am Laurent, I work for DXC Technology where I am acting as DevOps Coach and CI and CD expert for our customers. I hope at the end of this talk you will fall for development environment as code.
 -->
+
 <!--backgroundImage: url('https://github.com/GoDevOps/productive-on-day-one/raw/main/slides/title.jpg')-->
 <!-- _color:white -->
 <br/>
@@ -142,11 +143,11 @@ Depending on the size of the company:
 
 # 3 topics, 3 metrics
 
-| Topic                                        | Metric                  |
-| -------------------------------------------- | ----------------------- |
-| 🧑‍💻Bootstrapping a development environment    | Time to 1st code commit |
-| 🏭CI & CD to test and deploy                 | Time to test and deploy |
-| 📊Observability                              | Time to get feedback    |
+| Topic                                    | Metric                  |
+| ---------------------------------------- | ----------------------- |
+| 🧑‍💻Bootstrapping a development environment | Time to 1st code commit |
+| 🏭CI & CD to test and deploy              | Time to test and deploy |
+| 📊Observability                           | Time to get feedback    |
 
 <!--
 
@@ -164,7 +165,6 @@ Let's focus on the first point -->
 ---
 
 # Improving Time to 1st commit
-
 <!-- 
 - The topic of CI & CD has been covered by many talks in previous years at ADDO, and this year again. So, we won't be diving deep. 
 - Less so for observability, but this is topic where significant progress has been made, notably with thought leaders such as Charity Majors
@@ -196,7 +196,6 @@ Whether you are a new hire, or someone new to the team, it takes time to be read
 <!--
 As developers or IT operation guy  your probably know the "It works on my machine" syndrome. Development Environment As Code can help to avoid this kind of troubles as you will be able to have exactly the same environment during the development than in the CI/CD pipeline or in production.
 -->
-
 ![bg right:30% fit](https://i.redd.it/gfn7yg3psuh71.gif)
 
 ## "It works on my machine!"
@@ -205,18 +204,34 @@ As developers or IT operation guy  your probably know the "It works on my machin
 - Control dependencies
 - Code review on development environment changes
 - Secure credentials
+- Improve segregation between projects which may be for different clients
 
 ---
 
 # DevEnv as Code - Solutions
 
+<!--
+Development Environment as code is another step in the everything as code journey. Such as infrastructures moving from bare metal servers configured with script, to cloud infrastructure fully built and configured as code, the development environments are evoluting.
+
+with the emergence of new technologies such as containers, development environments can now move from being pets to be cattle.
+-->
+
+![bg right:30% fit](overview.drawio.png)
+
+## Pet way
+
 - based on virtual machines
+
+## Cattle way
+
 - based on docker containers
 - based on Kubernetes
 
 ---
 
 # DaaS (Desktop as a Service)
+
+![bg right:20% fit](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLxk2UDRsPqrXoYscy9Yzj5yS0gDN4S8vBjuqA5lKWbxpyMYTHLAw_6_RDV5VKCJQQbE4&usqp=CAU)
 
 - One centrally managed VM by developer
 - Preconfigured operating system
@@ -236,7 +251,6 @@ As developers or IT operation guy  your probably know the "It works on my machin
 # Docker based solution - DevContainers
 
 ![bg right:20% fit](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9s0sXU7CrO01h2mMomrxFM0ZBkA6lGVGD9vnJRyI_9xOtY2Cg1bsVucD3M8lwNi428Dc&usqp=CAU)
-
 - Integrated with VS Code
 - Configure dependencies
 - Configure VSCode extensions
@@ -263,8 +277,12 @@ As developers or IT operation guy  your probably know the "It works on my machin
 
 # DevContainer in Kubernetes
 
-- GitPod
-- Otekto
+- It's a container orchestrator thus we retrieve the previous benefits
+- All the good benefits of Kubernetes in matter of :
+  - resource usage
+  - multi tenancy
+  - cost management
+- Full browser based development environment
 
 ---
 
