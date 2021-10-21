@@ -14,7 +14,7 @@ style: |
     height: 70%;
   }
 paginate: false
-footer: '[github/ojacques](https://github.com/ojacques) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [github/angegar](https://github.com/angegar)'
+footer: "[github/ojacques](https://github.com/ojacques) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [github/angegar](https://github.com/angegar)"
 ---
 
 <!--
@@ -29,7 +29,7 @@ Agenda / Slides
 
 - Intro: why dev productivity is important? What if you don't do anything about it?
 - What gets in the way of developer productivity?
-  - Machine / PC / MAC * 
+  - Machine / PC / MAC *
   - Access to company portal
   - Access to productivity tools (DaaS/VDI, GIT host, ...) *
   - Access to privileged accounts (cloud, ...)
@@ -39,15 +39,15 @@ Agenda / Slides
 - Configuring your "machine"
   - Case A: Old style - word doc to configure. Discrepancies between developers
   - Case B: Local VMs (Vagrant):
-    - good: start to have common components. 
+    - good: start to have common components.
     - not so good: But not project specific. Missing config (need Ansible, Chocolatey or other). Need lots of RAM/CPU
   - Case C: VMs in the cloud:
     - good: as much capacity as needed. Low requirements on local machine.
     - not so good: shared images managed by IT, not admin
   - Case D: Docker. DevContainers, local, remote (codespaces), oktekto / GitPod
-    - good: 
+    - good:
       - Dev env can also be used for CI/CD
-    - Docs: 
+    - Docs:
       - https://code.visualstudio.com/docs/containers/choosing-dev-environment#_remote-machine
       - https://github.com/hypescaler/aws-vscode-remote-containers#managed-vs-code-remote-dev-environments
   - Case D+: language specific isolations (Python VirtualEnv, other)
@@ -60,11 +60,11 @@ Agenda / Slides
 
 - DEMO - 15 min
   - Laurent: I'm on my local VM, I debug locally (devcontainer)
-  - Olivier: I have nothing installed, but VSCode, I debug remotely 
+  - Olivier: I have nothing installed, but VSCode, I debug remotely
   Small Python Hello World (with a loop)
 -->
 
-<!-- 
+<!--
 speaker: Olivier
 
 Thank you. Today, Laurent and I are going to talk about "Documentation as Code" and more specifically CI and CD for documentation.
@@ -77,8 +77,9 @@ Speakers: Olivier & Laurent
 (NOTE: embed Olivier & Laurent's faces / OBS)
 
 Laurent:
-Hello I am Laurent, I also work for DXC Technology where I am acting internally as a DevOps Coach and externally as a CI and CD expert. I hope we will manage to show you the benefits of the CI and CD practices for documentation as code, as well as how easy it is to do it.
+Hello I am Laurent, I work for DXC Technology where I am acting as DevOps Coach and CI and CD expert for our customers. I hope at the end of this talk you will fall for development environment as code.
 -->
+
 <!--backgroundImage: url('https://github.com/GoDevOps/productive-on-day-one/raw/main/slides/title.jpg')-->
 <!-- _color:white -->
 <br/>
@@ -87,7 +88,9 @@ Hello I am Laurent, I also work for DXC Technology where I am acting internally 
 <br/>
 
 # Making Dev & Ops Productive
+
 # on day 1
+
 ## ...and ever after
 
 ---
@@ -100,15 +103,15 @@ The quest for productivity
 
 And why we care
 
-<!-- 
+<!--
 
-Back to this presentation. 
+Back to this presentation.
 
 This presentation is an experience report, because we have learned so much from others through this format.
 
 This presentation is about our quest: the quest for developer productivity.
 
-Previously, 
+Previously,
 - It would take weeks, sometimes months for a new Dev or Ops to be productive
 - Getting access to systems was a quest in itself
 - ...
@@ -123,45 +126,82 @@ Today, it's a very different situation
 # Facts
 
 1. You are a software powered company
-2) You need to optimize end-to-end
 
----
-# Developer productivity matters
-
-It's even a job title: DevEx
-
-Also known as "Enablement team."
-
-Also known as Internal tooling / developer productivity engineers / toolsmiths
+2) Developer's productivity impacts directly business outcomes
 
 ---
 
-# 3 areas
+# Whose job is it?
 
-1. Bootstrapping a development and debug environment
-1. Deployment and tests with CI & CD
-1. Analytics
+Depending on the size of the company:
 
-<!-- Productive as 1 dev, productive as a team, productive for operations 
+- Toolsmiths
+- A job title: **DevEx**
+- An "Enablement team" (📘 [Team Topologies](https://teamtopologies.com/), Skelton & Pais).
+
+---
+
+# 3 topics, 3 metrics
+
+| Topic                                    | Metric                  |
+| ---------------------------------------- | ----------------------- |
+| 🧑‍💻Bootstrapping a development environment | Time to 1st code commit |
+| 🏭CI & CD to test and deploy              | Time to test and deploy |
+| 📊Observability                           | Time to get feedback    |
+
+<!--
+
+- First is when you go from 0 to some code / artifacts
+- Then you need to share / integrate with the rest of the team and eventually put it in the hands of your customer
+- Finally, it is about enabling observability and give clarity to what is happening to the developers
+
+In summary:
+- Productive as 1 dev,
+- productive as a team,
+- operational excellence
+
 Let's focus on the first point -->
-
----
-
-# 3 measures
-
-From nothing to improving:
-
-1. Time to 1st code commit
-2) Time to test and deploy
-3) Time to get feedback
 
 ---
 
 # Improving Time to 1st commit
 
----
+<!-- 
+- The topic of CI & CD has been covered by many talks in previous years at ADDO, and this year again. So, we won't be diving deep. 
+- Less so for observability, but this is topic where significant progress has been made, notably with thought leaders such as Charity Majors
+- We will focus on the first topic, which is to improve the time to 1st commit
 
+-->
+
+# 🚫 ➡️ 🧑‍💻
+
+---
+# How it often goes 🧐
+- Get a PC/MAC
+- VPN
+- Install Integrated Developer Environment tool (IDE), GIT
+- Install language / libraries / SDKs
+- Install debugger / linters / test tools
+- Get access to the repository / get credentials
+- Does it compile, yet?
+
+📘 "The First Ideal": locality and simplicity, from [The Unicorn Project](https://itrevolution.com/the-unicorn-project/), Gene Kim
+
+<!--
+Whether you are a new hire, or someone new to the team, it takes time to be ready to code. Let's look at everything involved, in a very classical way.
+-->
+
+---
 # DevEnv as Code
+
+<!--
+As developers or IT operation guy  your probably know the "It works on my machine" syndrome. Development Environment As Code can help to avoid this kind of troubles as you will be able to have exactly the same environment during the development than in the CI/CD pipeline or in production.
+-->
+<<<<<<< HEAD
+
+=======
+>>>>>>> Add text
+![bg right:30% fit](https://i.redd.it/gfn7yg3psuh71.gif)
 
 ## "It works on my machine!"
 
@@ -169,18 +209,34 @@ From nothing to improving:
 - Control dependencies
 - Code review on development environment changes
 - Secure credentials
+- Improve segregation between projects which may be for different clients
 
 ---
 
 # DevEnv as Code - Solutions
 
+<!--
+Development Environment as code is another step in the everything as code journey. Such as infrastructures moving from bare metal servers configured with script, to cloud infrastructure fully built and configured as code, the development environments are evoluting.
+
+with the emergence of new technologies such as containers, development environments can now move from being pets to be cattle.
+-->
+
+![bg right:30% fit](overview.drawio.png)
+
+## Pet way
+
 - based on virtual machines
+
+## Cattle way
+
 - based on docker containers
 - based on Kubernetes
 
 ---
 
 # DaaS (Desktop as a Service)
+
+![bg right:20% fit](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLxk2UDRsPqrXoYscy9Yzj5yS0gDN4S8vBjuqA5lKWbxpyMYTHLAw_6_RDV5VKCJQQbE4&usqp=CAU)
 
 - One centrally managed VM by developer
 - Preconfigured operating system
@@ -193,8 +249,13 @@ From nothing to improving:
 
 ---
 
+![bg 80%](daas.drawio.png)
+
+---
+
 # Docker based solution - DevContainers
 
+![bg right:20% fit](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9s0sXU7CrO01h2mMomrxFM0ZBkA6lGVGD9vnJRyI_9xOtY2Cg1bsVucD3M8lwNi428Dc&usqp=CAU)
 - Integrated with VS Code
 - Configure dependencies
 - Configure VSCode extensions
@@ -202,6 +263,11 @@ From nothing to improving:
 - Required local docker host
   - May work with remote docker hosts (ex: Docker Desktop for Windows)
 - Required the Remote-Development extension
+
+---
+# Local 🐳 container
+
+![Local Docker container architecture](local.container.drawio.png)
 
 ---
 
@@ -216,8 +282,12 @@ From nothing to improving:
 
 # DevContainer in Kubernetes
 
-- GitPod
-- Otekto
+- It's a container orchestrator thus we retrieve the previous benefits
+- All the good benefits of Kubernetes in matter of :
+  - resource usage
+  - multi tenancy
+  - cost management
+- Full browser based development environment
 
 ---
 
@@ -231,15 +301,13 @@ CI and CD!
 
 ---
 
----
-
 <!--
 # Notes
 
 - Operations
   - Authentication
   - Authorization
-  
+
 - Developers
   - GitHub DevContainer
     - Container is hosted on GitHub CodeSpaces
@@ -252,6 +320,12 @@ https://marketplace.visualstudio.com/items?itemName=okteto.remote-kubernetes
 Okteto sounds amazing, let's give it a shot
 
 -->
+
+---
+
+# Time for a li'l demo?
+
+# 🕯️
 
 ---
 # Thank you 🙏
