@@ -10,6 +10,7 @@ CLI
 Codespaces
 cron
 DaaS
+Deepnote
 dev
 DevContainer
 DevContainers
@@ -39,6 +40,9 @@ Jenkinsfile
 jpeg
 jpg
 Kubernetes
+Kunal
+Bhalla
+Env
 laurent
 li'l
 linter

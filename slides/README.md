@@ -139,6 +139,8 @@ Depending on the size of the company:
 - A job title: **DevEx**
 - An "Enablement team" (📘 [Team Topologies](https://teamtopologies.com/), Skelton & Pais).
 
+Deepnote: [how many toolsmiths should you have](https://deepnote.com/@kunal-bhalla/How-many-Toolsmiths-should-you-have-iq7ofAd0TOy4jq0jk2mB9Q) by Kunal Bhalla
+
 ---
 
 # 3 topics, 3 metrics
@@ -225,7 +227,7 @@ with the emergence of new technologies such as containers, development environme
 
 ## Cattle way
 
-- based on docker containers
+- based on Docker containers
 - based on Kubernetes
 
 ---
@@ -248,35 +250,62 @@ with the emergence of new technologies such as containers, development environme
 ![bg 80%](daas.drawio.png)
 
 ---
+<!-- DaaS is very useful and fit many needs. 
+Now, we also hear a lot from our developers is that they would love:
+- More flexibility to install what they need
+- Manage the environment "as code", next to the code repository
+- Take the environment with them
+- Integrate with other tools, locally on their PC
+- Run several environments, in parallel
+- Switch easily between dedicated, specialized environments
+-->
+# What if I told you...
+## Development environment in a container
+# 🤯
+
+---
 
 # Docker based solution - DevContainers
 
 ![bg right:20% fit](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9s0sXU7CrO01h2mMomrxFM0ZBkA6lGVGD9vnJRyI_9xOtY2Cg1bsVucD3M8lwNi428Dc&usqp=CAU)
-- Integrated with VS Code
+- [Remote containers](https://code.visualstudio.com/docs/remote/create-dev-container) VSCode extension
 - Configure dependencies
 - Configure VSCode extensions
 - Configure resource usage
-- Required local docker host
-  - May work with remote docker hosts (ex: Docker Desktop for Windows)
-- Required the Remote-Development extension
+- Require local Docker host
+  - May work with remote Docker hosts (ex: Docker Desktop for Windows)
+- Require the Remote-Development extension
 
 ---
-# Local 🐳 container
+## `devcontainer.json`
 
-![Local Docker container architecture](local.container.drawio.png)
+- IDE extensions and configuration
+- Ports to expose
+- Commands after it connects (post-create)
+
+## Container environment 🐳
+
+- Any image on Docker hub
+- Bring Your Own `Dockerfile`
+- Bring Your Own `docker-compose.yml`
+
+![Development container in GIT bg left:38% fit](devcontainer.folder.drawio.png)
 
 ---
 
-# Docker based solution - GitHub code space
+|IDE    | Development Env |
+|-------|-----------------|
+| Local | Local           |
 
-- Based on `devcontainer` (thus same features)
-- IDE hosted online, accessible from a web browser
-- May work with a local VSCode instance
-- Self-hosted solution
+![Local Docker container architecture bg center 60%](devcontainers.drawio.png)
 
 ---
 
 # DevContainer in Kubernetes
+
+|IDE    | Development Env |
+|-------|-----------------|
+| Local | Remote          |
 
 - It's a container orchestrator thus we retrieve the previous benefits
 - All the good benefits of Kubernetes in matter of :
@@ -287,13 +316,16 @@ with the emergence of new technologies such as containers, development environme
 
 ---
 
-# Improving time to test and deploy
+# Docker based solution - GitHub code space
 
-CI and CD!
+|IDE     | Development Env |
+|--------|-----------------|
+| Remote | Remote          |
 
----
-
-# Improving time to get feedback
+- Based on `devcontainer` (thus same features)
+- IDE hosted online, accessible from a web browser
+- May work with a local VSCode instance
+- Self-hosted solution
 
 ---
 
