@@ -214,9 +214,9 @@ As developers or IT operation guy  your probably know the "It works on my machin
 # DevEnv as Code - Solutions
 
 <!--
-Development Environment as code is another step in the everything as code journey. Such as infrastructures moving from bare metal servers configured with script, to cloud infrastructure fully built and configured as code, the development environments are evoluting.
+Development Environment as code is another step in the everything as code journey. Such as infrastructures moving from bare metal servers configured with scripts, to cloud infrastructure fully built and configured as code, the development environments are evolving.
 
-with the emergence of new technologies such as containers, development environments can now move from being pets to be cattle.
+With the emergence of new technologies such as containers, development environments can now move from being pets to be cattle.
 -->
 
 ![bg right:30% fit](overview.drawio.png)
@@ -236,7 +236,7 @@ with the emergence of new technologies such as containers, development environme
 
 ![bg right:20% fit](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLxk2UDRsPqrXoYscy9Yzj5yS0gDN4S8vBjuqA5lKWbxpyMYTHLAw_6_RDV5VKCJQQbE4&usqp=CAU)
 
-- One centrally managed VM by developer
+- One centrally managed VM per developer
 - Preconfigured operating system
 - Each project has different needs
   - Different OS flavors
@@ -267,6 +267,10 @@ Now, we also hear a lot from our developers is that they would love:
 
 # Docker based solution - DevContainers
 
+<!--
+Devcontainer is a Microsoft product integrated with VSCode and Docker Desktop for Windows. It allows developers to configure development operating system and IDE with code. So that the configuration can be stored next to the source code in a Git repository. By the way, it becomes easily sharable across the development it and reusable in the CI/CD environments.
+-->
+
 ![bg right:20% fit](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9s0sXU7CrO01h2mMomrxFM0ZBkA6lGVGD9vnJRyI_9xOtY2Cg1bsVucD3M8lwNi428Dc&usqp=CAU)
 - [Remote containers](https://code.visualstudio.com/docs/remote/create-dev-container) VSCode extension
 - Configure dependencies
@@ -277,8 +281,11 @@ Now, we also hear a lot from our developers is that they would love:
 - Require the Remote-Development extension
 
 ---
+
 ## `devcontainer.json`
 
+<!--Tips: Take care to not install tools from the devcontainer.json file as those tools will not be available in the CI/CD environment which will only use the Dockerfile.
+-->
 - IDE extensions and configuration
 - Ports to expose
 - Commands after it connects (post-create)
