@@ -197,10 +197,6 @@ Whether you are a new hire, or someone new to the team, it takes time to be read
 <!--
 As developers or IT operation guy  your probably know the "It works on my machine" syndrome. Development Environment As Code can help to avoid this kind of troubles as you will be able to have exactly the same environment during the development than in the CI/CD pipeline or in production.
 -->
-<<<<<<< HEAD
-
-=======
->>>>>>> Add text
 ![bg right:30% fit](https://i.redd.it/gfn7yg3psuh71.gif)
 
 ## "It works on my machine!"
