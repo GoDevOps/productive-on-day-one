@@ -173,7 +173,6 @@ video.inslide {
 <li>Get access to the repository / get credentials</li>
 <li>Does it compile, yet?</li>
 </ul>
-<p><img class="emoji" draggable="false" alt="📘" src="https://twemoji.maxcdn.com/2/svg/1f4d8.svg" data-marp-twemoji=""/> &quot;The First Ideal&quot;: locality and simplicity, from <a href="https://itrevolution.com/the-unicorn-project/">The Unicorn Project</a>, Gene Kim</p>
 <footer><a href="https://github.com/ojacques">github/ojacques</a>             <a href="https://github.com/angegar">github/angegar</a></footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section data-footer="[github/ojacques](https://github.com/ojacques) &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; [github/angegar](https://github.com/angegar)" data-background-image="url('https://github.com/GoDevOps/productive-on-day-one/raw/main/slides/simple.jpg')" data-theme="default" data-style="footer {
@@ -206,7 +205,7 @@ video.inslide {
 <li>Offers easy to start development environment</li>
 <li>Control dependencies</li>
 <li>Code review on development environment changes</li>
-<li>Secure credentials</li>
+<li>Secure credentials because the environment is ephemeral</li>
 <li>Improve segregation between projects which may be for different clients</li>
 </ul>
 <footer><a href="https://github.com/ojacques">github/ojacques</a>             <a href="https://github.com/angegar">github/angegar</a></footer>
@@ -485,8 +484,7 @@ video.inslide {
 <ul>
 <li>Based on <code>devcontainer</code> (thus same features)</li>
 <li>IDE hosted online, accessible from a web browser</li>
-<li>May work with a local VSCode instance</li>
-<li>Self-hosted solution</li>
+<li>Can work with a local VSCode instance</li>
 </ul>
 <footer><a href="https://github.com/ojacques">github/ojacques</a>             <a href="https://github.com/angegar">github/angegar</a></footer>
 </section>
@@ -519,7 +517,6 @@ video.inslide {
 }
 " style="--background-image:url('https://github.com/GoDevOps/productive-on-day-one/raw/main/slides/simple.jpg');--theme:default;
 ;background-image:url('https://github.com/GoDevOps/productive-on-day-one/raw/main/slides/simple.jpg');background-position:center;background-repeat:no-repeat;background-size:cover;">
-<h1>Thank you <img class="emoji" draggable="false" alt="🙏" src="https://twemoji.maxcdn.com/2/svg/1f64f.svg" data-marp-twemoji=""/></h1>
 <footer><a href="https://github.com/ojacques">github/ojacques</a>             <a href="https://github.com/angegar">github/angegar</a></footer>
 </section>
 <script>!function(){"use strict";const t="marpitSVGPolyfill:setZoomFactor,",e=Symbol();let o,r;function n(n){const i="object"==typeof n&&n.target||document,a="object"==typeof n?n.zoom:n;window[e]||(Object.defineProperty(window,e,{configurable:!0,value:!0}),window.addEventListener("message",({data:e,origin:o})=>{if(o===window.origin)try{if(e&&"string"==typeof e&&e.startsWith(t)){const[,t]=e.split(","),o=Number.parseFloat(t);Number.isNaN(o)||(r=o)}}catch(t){console.error(t)}}));let l=!1;Array.from(i.querySelectorAll("svg[data-marpit-svg]"),t=>{var e,n,i,s;t.style.transform||(t.style.transform="translateZ(0)");const c=a||r||t.currentScale||1;o!==c&&(o=c,l=c);const d=t.getBoundingClientRect(),{length:u}=t.children;for(let o=0;o<u;o+=1){const r=t.children[o],a=r.getScreenCTM();if(a){const t=null!==(n=null===(e=r.x)||void 0===e?void 0:e.baseVal.value)&&void 0!==n?n:0,o=null!==(s=null===(i=r.y)||void 0===i?void 0:i.baseVal.value)&&void 0!==s?s:0,l=r.firstChild,{style:u}=l;u.transformOrigin||(u.transformOrigin=`${-t}px ${-o}px`),u.transform=`scale(${c}) matrix(${a.a}, ${a.b}, ${a.c}, ${a.d}, ${a.e-d.left}, ${a.f-d.top}) translateZ(0.0001px)`}}}),!1!==l&&Array.from(i.querySelectorAll("iframe"),({contentWindow:e})=>{null==e||e.postMessage(`${t}${l}`,"null"===window.origin?"*":window.origin)})}o=1,r=void 0;const i=(t,e,o)=>{if(t.getAttribute(e)!==o)return t.setAttribute(e,o),!0};function a(t={}){const e="boolean"==typeof t?(t=>{const e=!t;return console.warn(`[DEPRECATION WARNING] Usage of observer() with boolean option has been deprecated. Please replace with the usage of option object: observer({ once: ${e?"true":"false"} }).`),{once:e}})(t):t,{once:o=!1,target:r=document}=e,a="Apple Computer, Inc."===navigator.vendor?[n]:[];let l=!o;const s=()=>{for(const t of a)t({target:r});!function(t=document){Array.from(t.querySelectorAll('svg[data-marp-fitting="svg"]'),t=>{var e;const o=t.firstChild,r=o.firstChild,{scrollWidth:n,scrollHeight:a}=r;let l,s=1;if(t.hasAttribute("data-marp-fitting-code")&&(l=null===(e=t.parentElement)||void 0===e?void 0:e.parentElement),t.hasAttribute("data-marp-fitting-math")&&(l=t.parentElement),l){const t=getComputedStyle(l),e=Math.ceil(l.clientWidth-parseFloat(t.paddingLeft||"0")-parseFloat(t.paddingRight||"0"));e&&(s=e)}const c=Math.max(n,s),d=Math.max(a,1),u=`0 0 ${c} ${d}`;i(o,"width",""+c),i(o,"height",""+d),i(t,"preserveAspectRatio",getComputedStyle(t).getPropertyValue("--preserve-aspect-ratio")||"xMinYMin meet"),i(t,"viewBox",u)&&t.classList.toggle("__reflow__")})}(r),l&&window.requestAnimationFrame(s)};return s(),()=>{l=!1}}const l=Symbol(),s=document.currentScript;((t=document)=>{if("undefined"==typeof window)throw new Error("Marp Core's browser script is valid only in browser context.");if(t[l])return t[l];const e=a({target:t}),o=()=>{e(),delete t[l]};Object.defineProperty(t,l,{configurable:!0,value:o})})(s?s.getRootNode():document)}();
@@ -544,8 +541,15 @@ When we talk with our customers, they are telling us that:
 - Working remote has exposed a new set of challenges: almost overnight, developers had to be equipped with laptops to be able to work from home - we are talking about challenges on both capability but also security front
 - They need help in making sense of all the technology and services available today to address those challenges
 
-We are about to share how we look at this space, and how to improve.</p></div><div class="bespoke-marp-note" data-index="2" tabindex="0"><p>First, some statements.</p></div><div class="bespoke-marp-note" data-index="3" tabindex="0"><p>Developer productivity is key, but whose job is it?
-The answer can depend on the size of the company...</p></div><div class="bespoke-marp-note" data-index="4" tabindex="0"><p>We can divide the topic of productivity into 3 topics, which we can measure with 3 synthetic metrics:
+We are about to share how we look at this space, and how to improve.</p></div><div class="bespoke-marp-note" data-index="2" tabindex="0"><p>Laurent 👇
+
+You are a software powered company thus the developers production directly impact your business.
+We will talk about multiple ways to decrease the developers time to first commit.</p></div><div class="bespoke-marp-note" data-index="3" tabindex="0"><p>Olivier 👇
+
+Developer productivity is key, but whose job is it?
+The answer can depend on the size of the company...</p></div><div class="bespoke-marp-note" data-index="4" tabindex="0"><p>Olivier 👇
+
+We can divide the topic of productivity into 3 topics, which we can measure with 3 synthetic metrics:
 - First is when you go from 0 to some code / artifacts
 - Then you need to share / integrate with the rest of the team and eventually put it in the hands of your customer
 - Finally, it is about enabling observability and give clarity to what is happening to the developers
@@ -558,16 +562,27 @@ In summary:
 - The topic of CI &amp; CD has been covered by many talks in previous years at ADDO, and this year again. So, we won't be diving deep. 
 - Less so for observability, but this is topic where significant progress has been made, notably with thought leaders such as Charity Majors
 
-Let's focus on the first point</p></div><div class="bespoke-marp-note" data-index="5" tabindex="0"><p>We will focus on the first topic, which is to improve the time to 1st commit.
-This is the time that it takes for a developer or more generally a contributor to actually contribute.</p></div><div class="bespoke-marp-note" data-index="6" tabindex="0"><p>Whether you are a new hire, or someone new to the team, it takes time to be ready to code. Let's look at everything involved, in a very classical way.</p></div><div class="bespoke-marp-note" data-index="7" tabindex="0"><p>Laurent 👇
-As developers or IT operation person, you probably know the &quot;It works on my machine&quot; syndrome. Development Environment As Code can help to avoid this kind of troubles as you will be able to have exactly the same environment during the development than in the CI/CD pipeline or in production.</p></div><div class="bespoke-marp-note" data-index="8" tabindex="0"><p>Development Environment as code is another step in the everything as code journey. Such as infrastructures moving from bare metal servers configured with script, to cloud infrastructure fully built and configured as code, the development environments are evolving.
+Let's focus on the first point</p></div><div class="bespoke-marp-note" data-index="5" tabindex="0"><p>Laurent 👇
 
-with the emergence of new technologies such as containers, development environments can now move from being pets to be cattle.</p></div><div class="bespoke-marp-note" data-index="10" tabindex="0"><p>Olivier 👇
+We will focus on the first topic, which is to improve the time to 1st commit.
+This is the time that it takes for a developer or more generally a contributor to actually contribute.</p></div><div class="bespoke-marp-note" data-index="6" tabindex="0"><p>Laurent 👇
+
+Whether you are a new hire, or someone new to the team, it takes time to be ready to code. Let's look at everything involved, in a very classical way.
+
+📘 &quot;The First Ideal&quot;: locality and simplicity, from [The Unicorn Project](https://itrevolution.com/the-unicorn-project/), Gene Kim</p></div><div class="bespoke-marp-note" data-index="7" tabindex="0"><p>Olivier 👇
+
+As developers or IT operation person, you probably know the &quot;It works on my machine&quot; syndrome. Development Environment As Code can help to avoid this kind of troubles as you will be able to have exactly the same environment during the development than in the CI/CD pipeline or in production.</p></div><div class="bespoke-marp-note" data-index="8" tabindex="0"><p>Laurent  👇
+
+Development Environment as code is another step in the everything as code journey. Such as infrastructures moving from bare metal servers configured with script, to cloud infrastructure fully built and configured as code, the development environments are evolving.
+
+with the emergence of new technologies such as containers, development environments can now move from being pets to be cattle.</p></div><div class="bespoke-marp-note" data-index="9" tabindex="0"><p>Olivier 👇</p></div><div class="bespoke-marp-note" data-index="10" tabindex="0"><p>Olivier 👇
+
 This is an example on how DaaS can be put in place, leveraging AWS Workspaces.
 
 What developers are telling us is that they need something more lightweight than a full VM to work with.
 They need something that they can open quickly, directly in their web browser and get a local development experience.
 At AWS, the solution which fits that need is called AWS Cloud9. You get an IDE in your browser (Chrome for example), and an environment pre-populated with tools so that you can start developing and debugging right away.</p></div><div class="bespoke-marp-note" data-index="11" tabindex="0"><p>Laurent 👇
+
 DaaS is very useful and fit many needs. 
 Now, we also hear a lot from our developers is that they would love:
 - Additional flexibility to install what they need
@@ -575,15 +590,24 @@ Now, we also hear a lot from our developers is that they would love:
 - Take the environment with them
 - Integrate with other tools, locally on their PC
 - Run several environments, in parallel
-- Switch easily between dedicated, specialized environments</p></div><div class="bespoke-marp-note" data-index="13" tabindex="0"><p>Devcontainers leverages 2 concepts: devcontainer.json and the container environment itself</p></div><div class="bespoke-marp-note" data-index="14" tabindex="0"><p>You can have everything locally, on your own machine. The IDE and the development environment.
+- Switch easily between dedicated, specialized environments</p></div><div class="bespoke-marp-note" data-index="13" tabindex="0"><p>Laurent 👇
+
+Devcontainers leverages 2 concepts: devcontainer.json and the container environment itself</p></div><div class="bespoke-marp-note" data-index="14" tabindex="0"><p>Olivier 👇
+
+You can have everything locally, on your own machine. The IDE and the development environment.
 This is used when:
 - You need the development environment &quot;as code&quot;, but must stay on a local environment (example: running tests with a mobile phone attached to your PC or a piece of hardware)
-- You have big enough developer PCs (RAM and CPU to be considered)</p></div><div class="bespoke-marp-note" data-index="15" tabindex="0"><p>You have the choice of going remote.
+- You have big enough developer PCs (RAM and CPU to be considered)</p></div><div class="bespoke-marp-note" data-index="15" tabindex="0"><p>Olivier 👇
+
+You have the choice of going remote.
 In case you need extra resources (lots of CPU, RAM) or specialized resources (like MAC or ARM), you can leverage remote development containers.
-Containers can be hosted on a Kubernetes environment.</p></div><div class="bespoke-marp-note" data-index="18" tabindex="0"><p>In conclusion,
-- Developer productivity is important
-- Start by measuring the onboarding experience on a project (time to 1st commit)
-- That space has evolved drastically and we need to stay aware of new capabilities to maximize business outcomes</p></div><script>!function(){"use strict";var e=function(e,t){var n,r=1===(e.parent||e).nodeType?e.parent||e:document.querySelector(e.parent||e),a=[].filter.call("string"==typeof e.slides?r.querySelectorAll(e.slides):e.slides||r.children,(function(e){return"SCRIPT"!==e.nodeName})),s={},i=function(e,t){return(t=t||{}).index=a.indexOf(e),t.slide=e,t},o=function(e,t){s[e]=(s[e]||[]).filter((function(e){return e!==t}))},l=function(e,t){return(s[e]||[]).reduce((function(e,n){return e&&!1!==n(t)}),!0)},c=function(e,t){a[e]&&(n&&l("deactivate",i(n,t)),n=a[e],l("activate",i(n,t)))},d=function(e,t){var r=a.indexOf(n)+e;l(e>0?"next":"prev",i(n,t))&&c(r,t)},u={off:o,on:function(e,t){return(s[e]||(s[e]=[])).push(t),o.bind(null,e,t)},fire:l,slide:function(e,t){if(!arguments.length)return a.indexOf(n);l("slide",i(a[e],t))&&c(e,t)},next:d.bind(null,1),prev:d.bind(null,-1),parent:r,slides:a,destroy:function(e){l("destroy",i(n,e)),s={}}};return(t||[]).forEach((function(e){e(u)})),n||c(0),u};function t(e){e.parent.classList.add("bespoke-marp-parent"),e.slides.forEach(e=>e.classList.add("bespoke-marp-slide")),e.on("activate",t=>{const n=t.slide,r=!n.classList.contains("bespoke-marp-active");e.slides.forEach(e=>{e.classList.remove("bespoke-marp-active"),e.setAttribute("aria-hidden","true")}),n.classList.add("bespoke-marp-active"),n.removeAttribute("aria-hidden"),r&&(n.classList.add("bespoke-marp-active-ready"),document.body.clientHeight,n.classList.remove("bespoke-marp-active-ready"))})}function n(e){let t=0,n=0;Object.defineProperty(e,"fragments",{enumerable:!0,value:e.slides.map(e=>[null,...e.querySelectorAll("[data-marpit-fragment]")])});const r=r=>void 0!==e.fragments[t][n+r],a=(r,a)=>{t=r,n=a,e.fragments.forEach((e,t)=>{e.forEach((e,n)=>{if(null==e)return;const s=t<r||t===r&&n<=a;e.setAttribute("data-bespoke-marp-fragment",s?"active":"inactive"),t===r&&n===a?e.setAttribute("data-bespoke-marp-current-fragment","current"):e.removeAttribute("data-bespoke-marp-current-fragment")})}),e.fragmentIndex=a;const s={slide:e.slides[r],index:r,fragments:e.fragments[r],fragmentIndex:a};e.fire("fragment",s)};e.on("next",({fragment:s=!0})=>{if(s){if(r(1))return a(t,n+1),!1;const s=t+1;e.fragments[s]&&a(s,0)}else{const r=e.fragments[t].length;if(n+1<r)return a(t,r-1),!1;const s=e.fragments[t+1];s&&a(t+1,s.length-1)}}),e.on("prev",({fragment:s=!0})=>{if(r(-1)&&s)return a(t,n-1),!1;const i=t-1;e.fragments[i]&&a(i,e.fragments[i].length-1)}),e.on("slide",({index:t,fragment:n})=>{let r=0;if(void 0!==n){const a=e.fragments[t];if(a){const{length:e}=a;r=-1===n?e-1:Math.min(Math.max(n,0),e-1)}}a(t,r)}),a(0,0)}var r,a,s=(function(e){
+Containers can be hosted on a Kubernetes environment.</p></div><div class="bespoke-marp-note" data-index="16" tabindex="0"><p>Laurent 👇
+
+One year ago, when we had prepared the previous AllDaysDevOps we discovered this github beta feature which is not Generally Available. 
+
+It offers the developer a fully managed as code development environment which is hosted in the GitHub data center.
+
+Let's have a quick overview</p></div><script>!function(){"use strict";var e=function(e,t){var n,r=1===(e.parent||e).nodeType?e.parent||e:document.querySelector(e.parent||e),a=[].filter.call("string"==typeof e.slides?r.querySelectorAll(e.slides):e.slides||r.children,(function(e){return"SCRIPT"!==e.nodeName})),s={},i=function(e,t){return(t=t||{}).index=a.indexOf(e),t.slide=e,t},o=function(e,t){s[e]=(s[e]||[]).filter((function(e){return e!==t}))},l=function(e,t){return(s[e]||[]).reduce((function(e,n){return e&&!1!==n(t)}),!0)},c=function(e,t){a[e]&&(n&&l("deactivate",i(n,t)),n=a[e],l("activate",i(n,t)))},d=function(e,t){var r=a.indexOf(n)+e;l(e>0?"next":"prev",i(n,t))&&c(r,t)},u={off:o,on:function(e,t){return(s[e]||(s[e]=[])).push(t),o.bind(null,e,t)},fire:l,slide:function(e,t){if(!arguments.length)return a.indexOf(n);l("slide",i(a[e],t))&&c(e,t)},next:d.bind(null,1),prev:d.bind(null,-1),parent:r,slides:a,destroy:function(e){l("destroy",i(n,e)),s={}}};return(t||[]).forEach((function(e){e(u)})),n||c(0),u};function t(e){e.parent.classList.add("bespoke-marp-parent"),e.slides.forEach(e=>e.classList.add("bespoke-marp-slide")),e.on("activate",t=>{const n=t.slide,r=!n.classList.contains("bespoke-marp-active");e.slides.forEach(e=>{e.classList.remove("bespoke-marp-active"),e.setAttribute("aria-hidden","true")}),n.classList.add("bespoke-marp-active"),n.removeAttribute("aria-hidden"),r&&(n.classList.add("bespoke-marp-active-ready"),document.body.clientHeight,n.classList.remove("bespoke-marp-active-ready"))})}function n(e){let t=0,n=0;Object.defineProperty(e,"fragments",{enumerable:!0,value:e.slides.map(e=>[null,...e.querySelectorAll("[data-marpit-fragment]")])});const r=r=>void 0!==e.fragments[t][n+r],a=(r,a)=>{t=r,n=a,e.fragments.forEach((e,t)=>{e.forEach((e,n)=>{if(null==e)return;const s=t<r||t===r&&n<=a;e.setAttribute("data-bespoke-marp-fragment",s?"active":"inactive"),t===r&&n===a?e.setAttribute("data-bespoke-marp-current-fragment","current"):e.removeAttribute("data-bespoke-marp-current-fragment")})}),e.fragmentIndex=a;const s={slide:e.slides[r],index:r,fragments:e.fragments[r],fragmentIndex:a};e.fire("fragment",s)};e.on("next",({fragment:s=!0})=>{if(s){if(r(1))return a(t,n+1),!1;const s=t+1;e.fragments[s]&&a(s,0)}else{const r=e.fragments[t].length;if(n+1<r)return a(t,r-1),!1;const s=e.fragments[t+1];s&&a(t+1,s.length-1)}}),e.on("prev",({fragment:s=!0})=>{if(r(-1)&&s)return a(t,n-1),!1;const i=t-1;e.fragments[i]&&a(i,e.fragments[i].length-1)}),e.on("slide",({index:t,fragment:n})=>{let r=0;if(void 0!==n){const a=e.fragments[t];if(a){const{length:e}=a;r=-1===n?e-1:Math.min(Math.max(n,0),e-1)}}a(t,r)}),a(0,0)}var r,a,s=(function(e){
 /*!
 * screenfull
 * v5.0.2 - 2020-02-13
