@@ -358,3 +358,12 @@ Let's have a quick overview
 # Demo time!
 
 ---
+
+# Thank you 🙏
+
+<!--
+In conclusion,
+- Developer productivity is important
+- Start by measuring the onboarding experience on a project (time to 1st commit)
+- That space has evolved drastically and we need to stay aware of new capabilities to maximize business outcomes
+-->
