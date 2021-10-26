@@ -79,7 +79,11 @@ We are about to share how we look at this space, and how to improve.
 2) Developer's productivity directly impacts business outcomes
 
 <!--
-First, some statements.
+Laurent 👇
+
+You are a software powered company thus the developers production directly impact your business.
+We will talk about multiple ways to decrease the developers time to first commit.
+
 -->
 
 ---
@@ -98,6 +102,8 @@ Depending on the size of the company:
 📊 Deepnote: [how many toolsmiths should you have](https://deepnote.com/@kunal-bhalla/How-many-Toolsmiths-should-you-have-iq7ofAd0TOy4jq0jk2mB9Q) by [🐤@kunalbhalla](https://twitter.com/kunalbhalla)
 
 <!--
+Olivier 👇
+
 Developer productivity is key, but whose job is it?
 The answer can depend on the size of the company...
 -->
@@ -113,6 +119,8 @@ The answer can depend on the size of the company...
 | 📊Observability                              | Time to get feedback    |
 
 <!--
+Olivier 👇
+
 We can divide the topic of productivity into 3 topics, which we can measure with 3 synthetic metrics:
 - First is when you go from 0 to some code / artifacts
 - Then you need to share / integrate with the rest of the team and eventually put it in the hands of your customer
@@ -133,6 +141,8 @@ Let's focus on the first point -->
 # Improving Time to 1st commit
 
 <!--
+Laurent 👇
+
 We will focus on the first topic, which is to improve the time to 1st commit.
 This is the time that it takes for a developer or more generally a contributor to actually contribute.
 
@@ -151,10 +161,12 @@ This is the time that it takes for a developer or more generally a contributor t
 - Get access to the repository / get credentials
 - Does it compile, yet?
 
-📘 "The First Ideal": locality and simplicity, from [The Unicorn Project](https://itrevolution.com/the-unicorn-project/), Gene Kim
-
 <!--
+Laurent 👇
+
 Whether you are a new hire, or someone new to the team, it takes time to be ready to code. Let's look at everything involved, in a very classical way.
+
+📘 "The First Ideal": locality and simplicity, from [The Unicorn Project](https://itrevolution.com/the-unicorn-project/), Gene Kim
 -->
 
 ---
@@ -162,7 +174,8 @@ Whether you are a new hire, or someone new to the team, it takes time to be read
 # DevEnv as Code
 
 <!--
-Laurent 👇
+Olivier 👇
+
 As developers or IT operation person, you probably know the "It works on my machine" syndrome. Development Environment As Code can help to avoid this kind of troubles as you will be able to have exactly the same environment during the development than in the CI/CD pipeline or in production.
 -->
 ![bg right:30% fit](https://i.redd.it/gfn7yg3psuh71.gif)
@@ -172,7 +185,7 @@ As developers or IT operation person, you probably know the "It works on my mach
 - Offers easy to start development environment
 - Control dependencies
 - Code review on development environment changes
-- Secure credentials
+- Secure credentials because the environment is ephemeral
 - Improve segregation between projects which may be for different clients
 
 ---
@@ -180,6 +193,8 @@ As developers or IT operation person, you probably know the "It works on my mach
 # DevEnv as Code - Solutions
 
 <!--
+Laurent  👇
+
 Development Environment as code is another step in the everything as code journey. Such as infrastructures moving from bare metal servers configured with script, to cloud infrastructure fully built and configured as code, the development environments are evolving.
 
 with the emergence of new technologies such as containers, development environments can now move from being pets to be cattle.
@@ -211,10 +226,16 @@ with the emergence of new technologies such as containers, development environme
 - Manage VM Start / Stop
 - **Different developers may have different setup**
 
+<!-- 
+Olivier 👇
+
+-->
+
 ---
 
 <!--
 Olivier 👇
+
 This is an example on how DaaS can be put in place, leveraging AWS Workspaces.
 
 What developers are telling us is that they need something more lightweight than a full VM to work with.
@@ -229,6 +250,7 @@ At AWS, the solution which fits that need is called AWS Cloud9. You get an IDE i
 
 <!--
 Laurent 👇
+
 DaaS is very useful and fit many needs. 
 Now, we also hear a lot from our developers is that they would love:
 - Additional flexibility to install what they need
@@ -259,6 +281,8 @@ Now, we also hear a lot from our developers is that they would love:
 ---
 
 <!--
+Laurent 👇
+
 Devcontainers leverages 2 concepts: devcontainer.json and the container environment itself
 -->
 
@@ -279,6 +303,8 @@ Devcontainers leverages 2 concepts: devcontainer.json and the container environm
 ---
 
 <!--
+Olivier 👇
+
 You can have everything locally, on your own machine. The IDE and the development environment.
 This is used when:
 - You need the development environment "as code", but must stay on a local environment (example: running tests with a mobile phone attached to your PC or a piece of hardware)
@@ -294,6 +320,8 @@ This is used when:
 ---
 
 <!--
+Olivier 👇
+
 You have the choice of going remote.
 In case you need extra resources (lots of CPU, RAM) or specialized resources (like MAC or ARM), you can leverage remote development containers.
 Containers can be hosted on a Kubernetes environment.
@@ -313,20 +341,20 @@ Containers can be hosted on a Kubernetes environment.
 
 - Based on `devcontainer` (thus same features)
 - IDE hosted online, accessible from a web browser
-- May work with a local VSCode instance
-- Self-hosted solution
+- Can work with a local VSCode instance
+
+<!--
+Laurent 👇
+
+One year ago, when we had prepared the previous AllDaysDevOps we discovered this github beta feature which is not Generally Available. 
+
+It offers the developer a fully managed as code development environment which is hosted in the GitHub data center.
+
+Let's have a quick overview
+-->
 
 ---
 
 # Demo time!
 
 ---
-
-# Thank you 🙏
-
-<!--
-In conclusion,
-- Developer productivity is important
-- Start by measuring the onboarding experience on a project (time to 1st commit)
-- That space has evolved drastically and we need to stay aware of new capabilities to maximize business outcomes
--->
