@@ -181,7 +181,7 @@ Development Environment as code is another step in the everything as code journe
 with the emergence of new technologies such as containers, development environments can now move from being pets to be cattle.
 -->
 
-![bg right:30% fit](overview.drawio.png)
+![bg right:30% fit](https://github.com/GoDevOps/productive-on-day-one/raw/main/slides/overview.drawio.png)
 
 ## Pet way
 
@@ -218,7 +218,7 @@ At AWS, the solution which fits that need is called AWS Cloud9. You get an IDE i
 
 -->
 
-![bg 65%](daas.drawio.png)
+![bg 65%](https://github.com/GoDevOps/productive-on-day-one/raw/main/slides/daas.drawio.png)
 
 ---
 <!--
@@ -267,7 +267,7 @@ Devcontainers leverages 2 concepts: devcontainer.json and the container environm
 - Bring Your Own `Dockerfile`
 - Bring Your Own `docker-compose.yml`
 
-![Development container in GIT bg left:38% fit](devcontainer.folder.drawio.png)
+![Development container in GIT bg left:38% fit](https://github.com/GoDevOps/productive-on-day-one/raw/main/slides/devcontainer.folder.drawio.png)
 
 ---
 <!--
@@ -277,7 +277,7 @@ This is used when:
 - You have big enough developer PCs (RAM and CPU to be considered)
 -->
 
-![Local Docker container architecture bg left 90%](devcontainers.drawio.png)
+![Local Docker container architecture bg left 90%](https://github.com/GoDevOps/productive-on-day-one/raw/main/slides/devcontainers.drawio.png)
 
 - Benefits of development environment "as code"
 - Connects to local environment
@@ -291,7 +291,7 @@ In case you need extra resources (lots of CPU, RAM) or specialized resources (li
 Containers can be hosted on a Kubernetes environment.
 -->
 
-![Remote Docker container architecture bg left 90%](devcontainers.remote.drawio.png)
+![Remote Docker container architecture bg left 90%](https://github.com/GoDevOps/productive-on-day-one/raw/main/slides/devcontainers.remote.drawio.png)
 
 - All the benefits of Kubernetes in terms of :
   - resource usage
