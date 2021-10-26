@@ -81,6 +81,7 @@ We are about to share how we look at this space, and how to improve.
 <!--
 First, some statements.
 -->
+
 ---
 
 # Whose job is it?
@@ -100,6 +101,7 @@ Depending on the size of the company:
 Developer productivity is key, but whose job is it?
 The answer can depend on the size of the company...
 -->
+
 ---
 
 # 3 topics, 3 metrics
@@ -139,6 +141,7 @@ This is the time that it takes for a developer or more generally a contributor t
 # 🚫 ➡️ 🧑‍💻
 
 ---
+
 # How it often goes 🧐
 - Get a PC/MAC
 - VPN
@@ -155,6 +158,7 @@ Whether you are a new hire, or someone new to the team, it takes time to be read
 -->
 
 ---
+
 # DevEnv as Code
 
 <!--
@@ -208,6 +212,7 @@ with the emergence of new technologies such as containers, development environme
 - **Different developers may have different setup**
 
 ---
+
 <!--
 Olivier 👇
 This is an example on how DaaS can be put in place, leveraging AWS Workspaces.
@@ -221,6 +226,7 @@ At AWS, the solution which fits that need is called AWS Cloud9. You get an IDE i
 ![bg 65%](https://github.com/GoDevOps/productive-on-day-one/raw/main/slides/daas.drawio.png)
 
 ---
+
 <!--
 Laurent 👇
 DaaS is very useful and fit many needs. 
@@ -251,6 +257,7 @@ Now, we also hear a lot from our developers is that they would love:
 - Require the Remote-Development extension
 
 ---
+
 <!--
 Devcontainers leverages 2 concepts: devcontainer.json and the container environment itself
 -->
@@ -270,6 +277,7 @@ Devcontainers leverages 2 concepts: devcontainer.json and the container environm
 ![Development container in GIT bg left:38% fit](https://github.com/GoDevOps/productive-on-day-one/raw/main/slides/devcontainer.folder.drawio.png)
 
 ---
+
 <!--
 You can have everything locally, on your own machine. The IDE and the development environment.
 This is used when:
