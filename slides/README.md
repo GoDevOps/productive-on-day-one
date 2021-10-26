@@ -346,7 +346,7 @@ Containers can be hosted on a Kubernetes environment.
 <!--
 Laurent 👇
 
-One year ago, when we had prepared the previous AllDaysDevOps we discovered this github beta feature which is not Generally Available. 
+One year ago, when we had prepared the previous AllDaysDevOps we discovered this github beta feature which is now Generally Available. 
 
 It offers the developer a fully managed as code development environment which is hosted in the GitHub data center.
 
