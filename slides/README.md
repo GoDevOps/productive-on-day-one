@@ -134,13 +134,21 @@ In summary:
 - The topic of CI & CD has been covered by many talks in previous years at ADDO, and this year again. So, we won't be diving deep. 
 - Less so for observability, but this is topic where significant progress has been made, notably with thought leaders such as Charity Majors
 
-Let's focus on the first point -->
+Let's focus on the first point 
+
+⚠⚠⚠⚠ 10 minutes
+
+
+-->
 
 ---
 
 # Improving Time to 1st commit
 
 <!--
+
+⚠⚠⚠⚠ 10 minutes
+
 Laurent 👇
 
 We will focus on the first topic, which is to improve the time to 1st commit.
